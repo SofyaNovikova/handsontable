@@ -416,7 +416,7 @@ class CustomBorders extends BasePlugin {
     * @private
     */
   clearBorders() {
-    let bordersFromTable = this.hot.rootElement.querySelectorAll('td[class^="border"]');
+    let bordersFromTable = this.hot.rootElement.querySelectorAll('td[class*="border"]');
 
     rangeEach(0, bordersFromTable.length - 1, (index) => {
       this.removeBordersFromDom(bordersFromTable[index].className);
