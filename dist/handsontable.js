@@ -24,7 +24,7 @@
  * SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  * 
  * Version: 3.0.0
- * Release date: 16/05/2018 (built at 09/05/2018 15:18:34)
+ * Release date: 16/05/2018 (built at 30/05/2018 13:15:45)
  */
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
@@ -6789,7 +6789,7 @@ module.exports = function (it) {
 /* 39 */
 /***/ (function(module, exports) {
 
-var core = module.exports = { version: '2.5.6' };
+var core = module.exports = { version: '2.5.7' };
 if (typeof __e == 'number') __e = core; // eslint-disable-line no-undef
 
 
@@ -28780,7 +28780,7 @@ Handsontable.DefaultSettings = _defaultSettings2.default;
 Handsontable.EventManager = _eventManager2.default;
 Handsontable._getListenersCounter = _eventManager.getListenersCounter; // For MemoryLeak tests
 
-Handsontable.buildDate = '09/05/2018 15:18:34';
+Handsontable.buildDate = '30/05/2018 13:15:45';
 Handsontable.packageName = 'handsontable';
 Handsontable.version = '3.0.0';
 
@@ -31207,7 +31207,7 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_236__;
 /* 237 */
 /***/ (function(module, exports) {
 
-
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 /* 238 */
@@ -46403,7 +46403,7 @@ var CustomBorders = function (_BasePlugin) {
     value: function clearBorders() {
       var _this6 = this;
 
-      var bordersFromTable = this.hot.rootElement.querySelectorAll('td[class^="border"]');
+      var bordersFromTable = this.hot.rootElement.querySelectorAll('td[class*="border"]');
 
       (0, _number.rangeEach)(0, bordersFromTable.length - 1, function (index) {
         _this6.removeBordersFromDom(bordersFromTable[index].className);
